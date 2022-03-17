@@ -1,0 +1,183 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+header h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 60px;
+}
+
+.navbar{
+    display: flex;
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 auto;
+    background: rgb(248, 223, 0);
+    position: sticky;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.navbar ul{
+    display: flex;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    background: rgb(0, 0, 0);
+}
+
+.navbar li{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.navbar a{
+    color: white;
+    font-weight: bold;
+}
+
+#banner{
+    background-image: url("images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bannertext{
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.664);
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#bannertext div{
+    width: 100%;
+    text-align: center;
+}
+
+#bannertext h1{
+    color: blue;
+}
+
+.cars{
+    display: flex; 
+    width: 100%;
+    background: rgb(255, 235, 191);
+    justify-content: space-evenly;
+    margin: 10px 0;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.carsdiv{
+    background: white;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.cars img{
+    max-width: 100%;
+    height: 50%;
+    padding: 10px 0;
+    
+}
+
+.divtext{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.divtext h2{
+    text-align: center;
+}
+
+.productstitle{
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+footer
+{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(218, 216, 216)
+}
+
+footer div{
+
+    height: 40%;
+    text-align: center;
+}
+
+.supporters{
+    margin-bottom: 30px;
+}
+.supporters img{
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#titlesupporters{
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+@media only screen and (max-width: 768px){
+
+    .cars{
+        flex-direction: column;
+        width: 80%;
+        margin: 10px auto;
+        align-items: center;
+        row-gap: 10px;
+        background: gray;
+    }
+
+    .carsdiv{
+        background: rgb(255, 255, 255);
+        width: 80%;
+        flex-shrink: 0;
+
+    }
+
+    .divtext{
+        margin-bottom: 20px;
+    }
+
+    .supporters img{
+        width: 80%;
+    }
+}
+
